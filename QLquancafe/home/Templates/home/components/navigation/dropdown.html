@@ -1,0 +1,59 @@
+<div class="dropdown-wrapper">
+  <button class="btn btn-outline" id="dropdownTrigger" aria-haspopup="menu" aria-expanded="false">
+    Tùy chọn
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  </button>
+
+  <div class="dropdown-menu" id="dropdownMenu" role="menu">
+    <div class="dropdown-label">Tài khoản của tôi</div>
+    <div class="dropdown-separator"></div>
+
+    <div class="dropdown-item" role="menuitem" data-action="profile">
+      Hồ sơ
+      <span class="dropdown-shortcut">⇧⌘P</span>
+    </div>
+    <div class="dropdown-item" role="menuitem" data-action="billing">
+      Thanh toán
+      <span class="dropdown-shortcut">⌘B</span>
+    </div>
+    <div class="dropdown-item" role="menuitem" data-action="settings">
+      Cài đặt
+      <span class="dropdown-shortcut">⌘S</span>
+    </div>
+
+    <!-- Submenu -->
+    <div class="dropdown-sub">
+      <div class="dropdown-sub-trigger" id="dropdownSubTrigger">
+        Mời người dùng
+        <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </div>
+      <div class="dropdown-sub-content" id="dropdownSubContent" role="menu">
+        <div class="dropdown-item" role="menuitem" data-action="email">Email</div>
+        <div class="dropdown-item" role="menuitem" data-action="message">Nhắn tin</div>
+      </div>
+    </div>
+
+    <div class="dropdown-separator"></div>
+
+    <!-- Checkbox item -->
+    <div class="dropdown-checkbox-item" data-checked="true" id="dropdownCheckbox" role="menuitemcheckbox">
+      <span class="item-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5" />
+        </svg>
+      </span>
+      Hiện thanh trạng thái
+    </div>
+
+    <div class="dropdown-separator"></div>
+
+    <div class="dropdown-item" role="menuitem" data-action="logout" data-variant="destructive">
+      Đăng xuất
+      <span class="dropdown-shortcut">⇧⌘Q</span>
+    </div>
+  </div>
+</div>

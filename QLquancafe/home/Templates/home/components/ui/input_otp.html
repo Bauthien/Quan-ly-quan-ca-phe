@@ -1,0 +1,32 @@
+<div class="otp-container">
+  <!-- Input thật, ẩn đi, nhận toàn bộ sự kiện gõ phím -->
+  <input
+    type="text"
+    inputmode="numeric"
+    pattern="[0-9]*"
+    maxlength="6"
+    class="otp-hidden-input"
+    id="otpInput"
+    autocomplete="one-time-code"
+  />
+
+  <div class="otp-visual" id="otpVisual">
+    <div class="otp-group">
+      <div class="otp-slot" data-index="0"></div>
+      <div class="otp-slot" data-index="1"></div>
+      <div class="otp-slot" data-index="2"></div>
+    </div>
+
+    <div class="otp-separator">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14" />
+      </svg>
+    </div>
+
+    <div class="otp-group">
+      <div class="otp-slot" data-index="3"></div>
+      <div class="otp-slot" data-index="4"></div>
+      <div class="otp-slot" data-index="5"></div>
+    </div>
+  </div>
+</div>

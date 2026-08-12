@@ -1,0 +1,30 @@
+<!-- Nút để mở dialog -->
+<button class="btn btn-primary" id="openDialogBtn">Chỉnh sửa hồ sơ</button>
+
+<!-- Overlay + Dialog -->
+<div class="dialog-overlay" id="dialogOverlay"></div>
+
+<div class="dialog-content" id="dialogContent" role="dialog" aria-modal="true" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+  <button class="dialog-close" id="dialogCloseBtn" aria-label="Đóng">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 6 6 18" /><path d="m6 6 12 12" />
+    </svg>
+    <span class="sr-only">Close</span>
+  </button>
+
+  <div class="dialog-header">
+    <h2 class="dialog-title" id="dialogTitle">Chỉnh sửa hồ sơ</h2>
+    <p class="dialog-description" id="dialogDesc">
+      Thực hiện thay đổi hồ sơ của bạn tại đây. Nhấn lưu khi hoàn tất.
+    </p>
+  </div>
+
+  <div class="dialog-body">
+    <p>Nội dung chính của dialog nằm ở đây.</p>
+  </div>
+
+  <div class="dialog-footer">
+    <button class="btn btn-outline" id="cancelBtn">Hủy</button>
+    <button class="btn btn-primary" id="saveBtn">Lưu thay đổi</button>
+  </div>
+</div>

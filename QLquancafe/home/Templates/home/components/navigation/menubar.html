@@ -1,0 +1,73 @@
+<div class="menubar" id="menubar">
+  <!-- Menu: File -->
+  <div class="menubar-menu">
+    <button class="menubar-trigger" data-menu="file">File</button>
+    <div class="menubar-content" data-content="file">
+      <div class="menubar-item" data-action="new-tab">
+        Tab mới <span class="menubar-shortcut">⌘T</span>
+      </div>
+      <div class="menubar-item" data-action="new-window">
+        Cửa sổ mới <span class="menubar-shortcut">⌘N</span>
+      </div>
+      <div class="menubar-item" data-disabled="true">Cửa sổ ẩn danh mới</div>
+      <div class="menubar-separator"></div>
+
+      <!-- Submenu -->
+      <div class="menubar-sub">
+        <div class="menubar-sub-trigger" data-sub="share">
+          Chia sẻ
+          <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+        </div>
+        <div class="menubar-sub-content" data-subcontent="share">
+          <div class="menubar-item" data-action="email-link">Email liên kết</div>
+          <div class="menubar-item" data-action="messages">Nhắn tin</div>
+        </div>
+      </div>
+
+      <div class="menubar-separator"></div>
+      <div class="menubar-item" data-action="print">In <span class="menubar-shortcut">⌘P</span></div>
+    </div>
+  </div>
+
+  <!-- Menu: Edit -->
+  <div class="menubar-menu">
+    <button class="menubar-trigger" data-menu="edit">Edit</button>
+    <div class="menubar-content" data-content="edit">
+      <div class="menubar-item" data-action="undo">Hoàn tác <span class="menubar-shortcut">⌘Z</span></div>
+      <div class="menubar-item" data-action="redo">Làm lại <span class="menubar-shortcut">⇧⌘Z</span></div>
+      <div class="menubar-separator"></div>
+      <div class="menubar-item" data-action="cut">Cắt</div>
+      <div class="menubar-item" data-action="copy">Sao chép</div>
+      <div class="menubar-item" data-action="paste">Dán</div>
+    </div>
+  </div>
+
+  <!-- Menu: View (có checkbox + radio items) -->
+  <div class="menubar-menu">
+    <button class="menubar-trigger" data-menu="view">View</button>
+    <div class="menubar-content" data-content="view">
+      <div class="menubar-checkbox-item" data-checked="true" data-action="show-bookmarks">
+        <span class="item-indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+        </span>
+        Thanh dấu trang
+      </div>
+      <div class="menubar-checkbox-item" data-checked="false" data-action="show-fullscreen">
+        <span class="item-indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+        </span>
+        Toàn màn hình
+      </div>
+      <div class="menubar-separator"></div>
+      <div class="menubar-label">Thu phóng</div>
+      <div class="menubar-radio-item" data-value="100" data-checked="true">
+        <span class="item-indicator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg></span>
+        100%
+      </div>
+      <div class="menubar-radio-item" data-value="150" data-checked="false">
+        <span class="item-indicator"></span>
+        150%
+      </div>
+    </div>
+  </div>
+</div>

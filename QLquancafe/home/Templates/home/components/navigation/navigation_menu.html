@@ -1,0 +1,61 @@
+<nav class="nav-menu">
+  <ul class="nav-menu-list">
+    <!-- Menu có dropdown content -->
+    <li class="nav-menu-item">
+      <button class="nav-menu-trigger" data-trigger="products">
+        Sản phẩm
+        <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </button>
+      <div class="nav-menu-content" data-content="products">
+        <div class="nav-content-grid">
+          <a href="#" class="nav-menu-link">
+            <span class="nav-link-title">Phân tích</span>
+            <span class="nav-link-desc">Theo dõi số liệu và hiệu suất theo thời gian thực.</span>
+          </a>
+          <a href="#" class="nav-menu-link">
+            <span class="nav-link-title">Tự động hóa</span>
+            <span class="nav-link-desc">Xây dựng quy trình làm việc tự động hiệu quả.</span>
+          </a>
+          <a href="#" class="nav-menu-link">
+            <span class="nav-link-title">Bảo mật</span>
+            <span class="nav-link-desc">Bảo vệ dữ liệu với mã hóa hai lớp.</span>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Menu có dropdown content khác -->
+    <li class="nav-menu-item">
+      <button class="nav-menu-trigger" data-trigger="resources">
+        Tài nguyên
+        <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </button>
+      <div class="nav-menu-content" data-content="resources">
+        <div class="nav-content-grid">
+          <a href="#" class="nav-menu-link">
+            <span class="nav-link-title">Tài liệu</span>
+            <span class="nav-link-desc">Hướng dẫn chi tiết cách sử dụng sản phẩm.</span>
+          </a>
+          <a href="#" class="nav-menu-link">
+            <span class="nav-link-title">Blog</span>
+            <span class="nav-link-desc">Cập nhật tin tức và mẹo hữu ích mới nhất.</span>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Link đơn giản, không có dropdown -->
+    <li class="nav-menu-item">
+      <a href="#" class="nav-menu-trigger nav-menu-simple-link">Bảng giá</a>
+    </li>
+  </ul>
+
+  <!-- Viewport: khung chứa nội dung dropdown, đổi kích thước theo menu đang mở -->
+  <div class="nav-viewport-wrapper">
+    <div class="nav-viewport" id="navViewport"></div>
+  </div>
+</nav>

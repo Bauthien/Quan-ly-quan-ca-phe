@@ -1,22 +1,160 @@
+{% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <h4>Quan Lý Quán Cà Phê </h4>
-        <script src="" async defer></script>
-    </body>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Quán Cafe</title>
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+</head>
+<body>
+
+    <!-- Header (Nhánh UI) -->
+    <header class="navbar">
+        <div class="user-profile">
+            {% include "home/components/ui/avatar.html" %}
+            {% include "home/components/ui/badge.html" %}
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 1. Navigation -->
+        <section class="section-box">
+            <h2>Thanh menu chính (Menubar)</h2>
+            {% include "home/components/navigation/menubar.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Menu điều hướng (Navigation Menu)</h2>
+            {% include "home/components/navigation/navigation_menu.html" %}
+        </section>
+
+        <section class="section-box">
+            {% include "home/components/navigation/breadcrumb.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Menu thả xuống (Dropdown Menu)</h2>
+            {% include "home/components/navigation/dropdown.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Thanh lệnh & Tìm kiếm (Command)</h2>
+            {% include "home/components/navigation/command.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Menu ngữ cảnh (Context Menu)</h2>
+            {% include "home/components/navigation/context_menu.html" %}
+        </section>
+
+        <!-- 2. UI Elements & Form Inputs -->
+        <section class="section-box">
+            <h2>Nút bấm (Button)</h2>
+            {% include "home/components/ui/button.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Hộp chọn (Checkbox)</h2>
+            {% include "home/components/ui/checkbox.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Nhãn trường dữ liệu (Label)</h2>
+            {% include "home/components/ui/label.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Ô nhập liệu (Input)</h2>
+            {% include "home/components/ui/input.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Nhập mã OTP (Input OTP)</h2>
+            {% include "home/components/ui/input_otp.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Biểu mẫu (Form)</h2>
+            {% include "home/components/ui/form.html" %}
+        </section>
+
+        <!-- 3. Layout: Carousel & Banner -->
+        <section class="section-box">
+            <h2>Trình chiếu (Carousel)</h2>
+            {% include "home/components/layout/carousel.html" %}
+        </section>
+
+        <section class="section-box">
+            {% include "home/components/layout/image_fallback.html" %}
+        </section>
+
+        <!-- 4. Layout: Chart, Card & Hover Card -->
+        <section class="section-box">
+            <h2>Biểu đồ (Chart)</h2>
+            {% include "home/components/layout/chart.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Thẻ nội dung (Card)</h2>
+            {% include "home/components/layout/card.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Thẻ xem nhanh (Hover Card)</h2>
+            {% include "home/components/layout/hover_card.html" %}
+        </section>
+
+        <!-- 5. Layout: Calendar & Collapsible -->
+        <section class="section-box">
+            <h2>Lịch (Calendar)</h2>
+            {% include "home/components/layout/calendar.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Nội dung ẩn/hiện (Collapsible)</h2>
+            {% include "home/components/layout/collapsible.html" %}
+        </section>
+
+        <!-- 6. Feedback & Modals -->
+        <section class="section-box">
+            <h2>Khung thông tin nổi (Popover)</h2>
+            {% include "home/components/feedback/popover.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Hộp thoại (Dialog)</h2>
+            {% include "home/components/feedback/dialog.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Ngăn kéo (Drawer)</h2>
+            {% include "home/components/feedback/drawer.html" %}
+        </section>
+
+        <section class="section-box">
+            <h2>Thông báo hệ thống (Alert)</h2>
+            {% include "home/components/feedback/alert.html" %}
+        </section>
+
+        <!-- 7. Navigation: Phân trang (Pagination) -->
+        <section class="section-box">
+            <h2>Phân trang (Pagination)</h2>
+            {% include "home/components/navigation/pagination.html" %}
+        </section>
+
+        <!-- 8. Layout: Accordion -->
+        <section class="section-box">
+            <h2>Câu hỏi thường gặp (Accordion)</h2>
+            {% include "home/components/layout/accordion.html" %}
+        </section>
+
+        <!-- 9. Feedback: Dialog Cảnh báo -->
+        <section class="section-box">
+            {% include "home/components/feedback/alert_dialog.html" %}
+        </section>
+    </main>
+
+    <script src="{% static 'home/js/main.js' %}"></script>
+</body>
 </html>

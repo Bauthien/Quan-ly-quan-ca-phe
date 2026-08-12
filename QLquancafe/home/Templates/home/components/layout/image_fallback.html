@@ -1,0 +1,9 @@
+{% load static %}
+<div class="image-fallback-wrapper">
+  <img
+    src="{% static 'home/images/sample.jpg' %}"
+    alt="Mô tả ảnh"
+    class="fallback-img"
+    onerror="handleImageError(this)"
+  />
+</div>

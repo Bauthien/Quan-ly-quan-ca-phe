@@ -1,0 +1,28 @@
+{% load static %}
+
+<!-- Avatar có ảnh (nếu ảnh lỗi sẽ tự hiện fallback) -->
+<div class="avatar">
+  <img
+    src="{% static 'home/images/avatar-1.jpg' %}"
+    alt="Nguyễn Văn A"
+    class="avatar-image"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+  />
+  <div class="avatar-fallback" style="display: none;">NA</div>
+</div>
+
+<!-- Avatar chỉ có chữ viết tắt (không có ảnh) -->
+<div class="avatar">
+  <div class="avatar-fallback">TB</div>
+</div>
+
+<!-- Avatar kích thước lớn hơn -->
+<div class="avatar avatar-lg">
+  <img
+    src="{% static 'home/images/avatar-2.jpg' %}"
+    alt="Trần Thị B"
+    class="avatar-image"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+  />
+  <div class="avatar-fallback" style="display: none;">TB</div>
+</div>

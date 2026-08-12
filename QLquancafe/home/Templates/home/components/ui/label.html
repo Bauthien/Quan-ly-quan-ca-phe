@@ -1,0 +1,28 @@
+<!-- Label thường, đi kèm input -->
+<div class="form-item">
+  <label class="label" for="name-input">Họ và tên</label>
+  <input type="text" id="name-input" class="input" placeholder="Nhập họ tên" />
+</div>
+
+<!-- Label có icon -->
+<div class="form-item">
+  <label class="label" for="email-input">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 5L2 7" />
+    </svg>
+    Email
+  </label>
+  <input type="email" id="email-input" class="input" placeholder="you@example.com" />
+</div>
+
+<!-- Label cho checkbox (nằm cạnh nhau) -->
+<div class="checkbox-item">
+  <input type="checkbox" id="terms-checkbox" class="checkbox-input" />
+  <label class="label" for="terms-checkbox">Tôi đồng ý với điều khoản</label>
+</div>
+
+<!-- Label khi input bị disabled (label tự mờ theo) -->
+<div class="form-item">
+  <label class="label" for="disabled-input">Không thể chỉnh sửa</label>
+  <input type="text" id="disabled-input" class="input peer" placeholder="..." disabled />
+</div>

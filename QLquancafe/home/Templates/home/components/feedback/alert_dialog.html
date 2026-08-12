@@ -1,0 +1,18 @@
+<!-- Nút để mở dialog -->
+<button class="btn btn-outline" id="openDialogBtn">Xóa tài khoản</button>
+
+<!-- Overlay + Dialog -->
+<div class="alert-dialog-overlay" id="dialogOverlay"></div>
+
+<div class="alert-dialog-content" id="dialogContent" role="alertdialog" aria-modal="true" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+  <div class="alert-dialog-header">
+    <h2 class="alert-dialog-title" id="dialogTitle">Bạn có chắc chắn không?</h2>
+    <p class="alert-dialog-description" id="dialogDesc">
+      Hành động này không thể hoàn tác. Dữ liệu của bạn sẽ bị xóa vĩnh viễn khỏi hệ thống.
+    </p>
+  </div>
+  <div class="alert-dialog-footer">
+    <button class="btn btn-outline" id="cancelBtn">Hủy</button>
+    <button class="btn btn-primary" id="confirmBtn">Tiếp tục</button>
+  </div>
+</div>
